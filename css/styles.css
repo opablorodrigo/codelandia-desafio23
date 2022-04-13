@@ -1,7 +1,7 @@
 /* Arquivo CSS base Codelândia*/
 
 :root {
-  --purple: #200C30;
+  --purple: #200c30;
   --dark: #14061f;
   --gray: #c0c0c0;
   --light: #f1f0f0;
@@ -204,7 +204,6 @@ input {
   height: 6vh;
 }
 
-
 .footer-left {
   display: flex;
   gap: 20px;
@@ -212,7 +211,6 @@ input {
   align-items: center;
   margin-top: 20px;
 }
-
 
 .footer-texto h1 {
   font-family: "GT Eesti Pro Display";
@@ -241,14 +239,14 @@ input {
   gap: 30px;
 }
 
-.footer-controles img:hover{
+.footer-controles img:hover {
   background: rgba(167, 165, 165, 0.4);
   border-radius: 100px;
   cursor: pointer;
   transition: 1.5s;
 }
 
-.footer-controles .play{
+.footer-controles .play {
   background: var(--purple);
   width: 40px;
   height: 40px;
@@ -266,7 +264,7 @@ input {
   width: 25px;
 }
 
-.botoes-right img:hover{
+.botoes-right img:hover {
   background: rgba(0, 0, 0, 0.4);
   border-radius: 100px;
   width: 100%;
