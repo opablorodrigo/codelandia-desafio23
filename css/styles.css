@@ -1,0 +1,277 @@
+/* Arquivo CSS base Codelândia*/
+
+:root {
+  --purple: #200C30;
+  --dark: #14061f;
+  --gray: #c0c0c0;
+  --light: #f1f0f0;
+  --green-light: #2ef4cc;
+  --gradiente: linear-gradient(
+    90.35deg,
+    #4ac08f 2.49%,
+    #2fb4ff 101.2%,
+    #2fb4ff 101.2%
+  );
+  --font: "IBM Plex Sans";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+::selection {
+  background-color: var(--green-light);
+  color: var(--dark);
+}
+body {
+  font-family: var(--font);
+  background-color: var(--dark);
+  color: var(--light);
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+button,
+input {
+  border: 0;
+  font-family: var(--font);
+}
+
+/* ARQUIVO BASE CODELANDIA */
+
+/* INICIO HEADER */
+.header-principal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  font-family: "GT Eesti Pro Display";
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--gray);
+  position: relative;
+  padding: 0 10px;
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  background-color: var(--green-light);
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+
+.menu a:hover {
+  color: var(--light);
+}
+
+.header-principal h1 {
+  font-family: "GT Eesti Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: var(--light);
+}
+
+.perfil-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.perfil-user p {
+  font-family: "GT Eesti Pro Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 20px;
+  color: var(--gray);
+}
+/* FIM HEADER*/
+
+/* MAIN PRINCIPAL */
+.principal {
+  background: url(/img/wallpaper.jpg) no-repeat;
+  background-size: cover;
+  height: 84vh;
+  width: 100%;
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  height: 82vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.texto h1 {
+  font-family: "GT Eesti Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-top: 20px;
+  color: var(--gray);
+}
+
+.controles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controles p {
+  font-family: "GT Eesti Pro Display";
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.controles .voltar-musica {
+  width: 20px;
+  height: 20px;
+  background: var(--gray);
+  border-radius: 50px;
+  margin: 20px;
+}
+
+.controles .avançar-musica {
+  width: 20px;
+  height: 20px;
+  background: var(--light);
+  border-radius: 50px;
+  margin: 20px;
+}
+/* FIM MAIN PRINCIPAL */
+
+.footer-principal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
+}
+
+
+.footer-left {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.footer-texto h1 {
+  font-family: "GT Eesti Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+}
+
+.footer-texto p {
+  font-family: "GT Eesti Pro Display";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin: 10px 0;
+}
+
+.footer-controles {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 30px;
+}
+
+.footer-controles img:hover{
+  background: rgba(167, 165, 165, 0.4);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: 1.5s;
+}
+
+.footer-controles .play{
+  background: var(--purple);
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  padding: 5px;
+  text-align: center;
+}
+
+.botoes-right {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  width: 25px;
+}
+
+.botoes-right img:hover{
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+  width: 100%;
+  height: 100%;
+  padding: 2px;
+  cursor: pointer;
+  transition: 1.5s;
+}
