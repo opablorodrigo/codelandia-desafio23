@@ -154,6 +154,10 @@ input {
   align-items: center;
 }
 
+.controles img:hover{
+  cursor: pointer;
+}
+
 .texto h1 {
   font-family: "GT Eesti Pro Display";
   font-style: normal;
