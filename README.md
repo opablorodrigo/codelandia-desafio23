@@ -12,3 +12,9 @@ https://pablorodrigo-codelandia-desafio23.netlify.app/
 
 - Ainda não está responsivo, mas estou estudando para aplicar neste projeto.
 - HTML e CSS usando flexbox, apenas.
+
+
+## Funcionalidades implantadas (15-04):
+
+- Responsividade aplicada após alguns estudos.
+- Aplicação de efeitos hover nos botões ilustrativos de controle de áudio e etc.
