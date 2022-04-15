@@ -277,3 +277,75 @@ input {
   cursor: pointer;
   transition: 1.5s;
 }
+
+/* MEDIA QUERIES */
+
+@media (max-width: 600px){
+    .header-principal{
+      display: flex;
+      flex-direction: column;
+      height: 25vh;
+    }
+
+    .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .principal{
+      background: url(/img/wallpaper.jpg) no-repeat;
+      background-size: cover;
+      background-position: auto;
+      height: 84vh;
+      width: 100%;
+    }
+
+    .footer-principal{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+      margin: 20px;
+    }
+
+    .botoes-right img{
+      margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px){
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-left img{
+    margin-right: 10px;
+  }
+
+  .botoes-right img{
+    margin: 0 10px;
+}
+}
+
+@media (max-width: 1280px){
+  .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .content .texto{
+    margin-left: 40px;
+  }
+
+  .botoes-right img{
+    margin: 0 10px;
+  }
+}
